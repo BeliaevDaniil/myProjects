@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-08-18T18:54:16</date>
+  <millis>1692374056740</millis>
+  <sequence>2</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Enemy was killed</message>
+</record>
+<record>
+  <date>2023-08-18T18:54:41</date>
+  <millis>1692374081852</millis>
+  <sequence>3</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Player</class>
+  <method>heal</method>
+  <thread>13</thread>
+  <message>Item: HealingItem was used by player</message>
+</record>
+<record>
+  <date>2023-08-18T18:54:46</date>
+  <millis>1692374086040</millis>
+  <sequence>4</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Boss was killed</message>
+</record>
+<record>
+  <date>2023-08-18T18:54:46</date>
+  <millis>1692374086041</millis>
+  <sequence>5</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Game is passed</message>
+</record>
+<record>
+  <date>2023-08-18T18:54:46</date>
+  <millis>1692374086043</millis>
+  <sequence>6</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Enemy was killed</message>
+</record>
+</log>

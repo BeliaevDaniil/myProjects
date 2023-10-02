@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>"To-do" - Login</title>
+	<link rel="stylesheet" media="screen" href="/css/style.css">
+	<link rel="stylesheet" media="print" href="/css/style_print.css">
+	<link rel="stylesheet" title="theme" href="/css/theme-dark.css">
+<!--    <script src="assets/js/validate.js"></script>-->
+
+</head>
+<body>
+    <!--Changing themes-->
+	<div class="theme">
+		<form action="#"><button class="btn_light"><img src="/img/sun.png" alt="light"></button></form>
+		<form action="#"><button class="btn_dark"><img src="/img/moon.png" alt="dark"></button></form>
+	</div>
+    <!--Header-->
+	<header>
+		<div class="logo"> 
+			<div class="logo_text">
+				<h1><a th:href="@{/}">To-do</a></h1>
+				<h2>Make your day structured</h2>
+			</div>
+		</div>
+        <!--Navigation-->
+		<nav class="menubar">
+			<ul class="menu">
+				<li><a th:href="@{/}">Home</a></li>
+				<li><a th:href="@{/todo}">My To-do</a></li>
+			</ul>
+		</nav>
+	</header>
+    <!--Main content-->
+	<div class="site_content">
+		<div class="container">
+            <!--Registration window-->
+			<section class="reg_window">
+				<h2 class="reg_title">Log in</h2>
+                <!--Form-->
+			    <form th:action="@{/login}"  method="post" class="form" id="loginForm">
+			        <fieldset>
+			            <div class="row">
+			                <label for="username"><span>*</span>Username:</label>
+			                <input type="text" placeholder="Enter your username" value="" name="username" id="username"
+								   title="The minimum username length is 3 characters, can contain only letters and digits"
+								   required pattern="[^\s]+[A-Za-zА-яЁё0-9]{2,}">
+
+			            </div>
+			            <div class="row">
+			            	<label for="password_login"><span>*</span>Password:</label>
+			            	<input type="password" name="password" id="password_login" placeholder="Enter your password"
+								   title="The minimum password length is 6 characters, password must not contain spaces"
+								   required pattern="\w{6,}">
+			            </div>
+
+						<p class="error" th:if="${errorMessage}" th:text="${errorMessage}"></p>
+
+                        <div class="explain"><p>Fields with "<span>*</span>" are required</p></div>
+                        <!--Log In button-->
+			            <input class="btn_form" type="submit" name="login" value="Login">
+                        <p>Don`t have an account? - <a class="btn_login" th:href="@{/register}">Register!</a></p>
+			        </fieldset>
+			    </form>
+			</section>
+		</div>
+	</div>
+    <!--Footer-->
+	<footer>
+        <!--Signature-->
+		<div class="created_by">
+			<p>&copy; Created by <a href="https://instagram.com/belya4real?igshid=YmMyMTA2M2Y=">Daniil Beliaev</a></p>
+		</div>
+	</footer>
+</body>
+</html>

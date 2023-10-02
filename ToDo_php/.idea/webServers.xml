@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dc3448c9-1fce-4679-8680-78c45f1f3af9" name="server1" url="http://localhost:8888">
+        <fileTransfer mountedRoot="/Applications/MAMP/htdocs/semestralka" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

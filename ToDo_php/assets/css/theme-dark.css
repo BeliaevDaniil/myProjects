@@ -1,0 +1,224 @@
+body {
+	color: #fff;
+	background-color: #222226;
+}
+/*Logo*/
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+	color: #fff;
+	text-shadow: 2px 2px 4px #5f5f5f;
+}
+.logo_text h2 {
+	color: #fff;
+	text-shadow: 2px 2px 4px #5f5f5f;
+}
+/*Header*/
+/*Navigation*/
+header .menubar {
+	border-top: solid 1px #444446;
+	border-bottom: solid 1px #444446;
+}
+ul.menu li a {
+	color: #fff;
+}
+ul.menu li.selected a {
+	color: #fff;
+	text-shadow: 2px 2px 10px #fff;
+}
+ul.menu li a:hover {
+	color: #212121;
+	text-shadow: 2px 2px 10px #fff;
+}
+/*Welcome text*/
+.site_content .container .hi_block {
+	background-color: #444446;
+	box-shadow: 4px 4px 6px #5f5f5f;
+}
+.site_content .container .hi_block h3 {
+	color: #fff;
+	border: solid 2px #d1d1d1;
+	background-color: #333336;
+}
+/*Create an account button*/
+.site_content .container .form_create .btn_create {
+	background-color: #444446;
+	box-shadow: 4px 4px 6px #444446;
+	color: #fff;
+}
+.site_content .container .btn_create:hover {
+	background-color: #6b6b6b;
+}
+/*Registration*/
+.site_content .container .reg_window {
+	background-color: #444446;
+	box-shadow: 4px 4px 6px #5f5f5f;
+}
+.site_content .reg_window .reg_title {
+	background-color: #333336;
+}
+/*Log in button*/
+.btn_login {
+	text-decoration: underline;
+	color: #fff;
+}
+
+form fieldset {
+	background-color: #333336;
+}
+input {
+	border: solid 2px #444446;
+	background-color: #333336;
+	color: #fff;
+}
+/*Send form button*/
+.btn_form {
+	background-color: #444446;
+	color: white;
+}
+.btn_form:hover {
+	background-color: #5A5A5A;
+}
+/*Username*/
+.site_content .container_todo .name_of_user p {
+	color: #ffffff;
+}
+/*to-do list*/
+.site_content .container_todo .todo_block {
+	background-color: #444446;
+	box-shadow: 4px 4px 6px #5f5f5f;
+}
+/*Send task form*/
+.site_content .container_todo .todo_block .todo_block_container form .form-control {
+	border: solid 2px #909090;
+}
+/*Send task form*/
+.site_content .container_todo .todo_block .todo_block_container form .sendTask {
+	background-color: #333336;
+	border: solid 2px #909090;
+	color: #fff;
+}
+.site_content .container_todo .todo_block .todo_block_container form .sendTask:hover {
+	border: solid 2px #fff;
+	color: #fff;
+}
+/*Task*/
+.site_content .container_todo .todo_block .todo_block_container ul .task_row .task_plate {
+	border: solid 2px #909090;
+	background-color: #333336;
+	color: #fff;
+}
+/*Crossed task*/
+.site_content .container_todo .todo_block .todo_block_container ul .task_row .task_plate_crossed {
+	border: solid 2px #909090;
+	background-color: #333336;
+	color: #fff;
+	text-decoration-color: #fff;
+}
+/*Update task button*/
+.site_content .container_todo .todo_block .todo_block_container .tasks_container .updForm .updTsk {
+	border: solid 2px #909090;
+	background-color: #333336;
+	color: #fff;
+}
+/*Delete task button*/
+.del {
+	background-color: #333336;
+	border: solid 2px #909090;
+	color: #fff;
+}
+.del:hover {
+	border: solid 2px #fff;
+	color: #fff;
+}
+/*Done task button*/
+.done {
+	background-color: #333336;
+	border: solid 2px #909090;
+	color: #fff;
+}
+.done:hover {
+	border: solid 2px #fff;
+	color: #fff;
+}
+/*Update task button*/
+.upd {
+	background-color: #333336;
+	border: solid 2px #909090;
+	color: #fff;
+}
+.upd:hover {
+	border: solid 2px #fff;
+	color: #fff;
+}
+/*Save updated task button*/
+.save {
+	background-color: #333336;
+	border: solid 2px #909090;
+	color: #fff;
+}
+.save:hover {
+	border: solid 2px #fff;
+	color: #fff;
+}
+/*Paging*/
+.paging a {
+	background-color: #333336;
+	border: solid 2px #909090;
+	color: #fff;
+}
+/*Footer*/
+footer {
+	background-color: #222226;
+}
+/*Signature*/
+footer .created_by {
+	border-top: solid 1px #444446;
+
+}
+footer .created_by p {
+	padding-top: 20px;
+	color: #ffffff;
+}
+footer .created_by p a {
+	text-decoration: none;
+	color: #bfbfbf;
+}
+footer .created_by p a:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+/*Changing themes*/
+.theme {
+	background: #222226;
+	box-shadow: 0 0 10px #5f5f5f;
+}
+/*Sun button*/
+.btn_light {
+	border: solid 2px #d1d1d1;
+	background-color: #222226;
+}
+.btn_light:hover {
+	border: solid 2px #fff;
+}
+/*Moon button*/
+.btn_dark {
+	border: solid 2px #d1d1d1;
+	background-color: #222226;
+}
+.btn_dark:hover {
+	border: solid 2px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

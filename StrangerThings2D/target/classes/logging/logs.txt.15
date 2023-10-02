@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-08-16T21:34:50</date>
+  <millis>1692210890998</millis>
+  <sequence>3</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Player</class>
+  <method>heal</method>
+  <thread>13</thread>
+  <message>Item: HealingItem was used by player</message>
+</record>
+<record>
+  <date>2023-08-16T21:34:54</date>
+  <millis>1692210894727</millis>
+  <sequence>4</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Enemy was killed</message>
+</record>
+<record>
+  <date>2023-08-16T21:35:10</date>
+  <millis>1692210910310</millis>
+  <sequence>5</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Enemy was killed</message>
+</record>
+<record>
+  <date>2023-08-16T21:35:19</date>
+  <millis>1692210919642</millis>
+  <sequence>6</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Player</class>
+  <method>heal</method>
+  <thread>13</thread>
+  <message>Item: HealingItem was used by player</message>
+</record>
+<record>
+  <date>2023-08-16T21:35:25</date>
+  <millis>1692210925910</millis>
+  <sequence>7</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Boss was killed</message>
+</record>
+<record>
+  <date>2023-08-16T21:35:25</date>
+  <millis>1692210925911</millis>
+  <sequence>8</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Game is passed</message>
+</record>
+<record>
+  <date>2023-08-16T21:35:25</date>
+  <millis>1692210925914</millis>
+  <sequence>9</sequence>
+  <logger>creatures.Player</logger>
+  <level>INFO</level>
+  <class>creatures.Enemy</class>
+  <method>checkIfEnemyIsDead</method>
+  <thread>13</thread>
+  <message>Enemy was killed</message>
+</record>
+</log>

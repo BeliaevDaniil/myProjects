@@ -1,0 +1,4 @@
+enemy, 30, 14
+enemy, 43, 15
+enemy, 44, 6
+boss, 31, 9

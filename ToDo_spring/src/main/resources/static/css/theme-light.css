@@ -1,0 +1,223 @@
+body {
+	color: #212121;
+	background-color: white;
+}
+/*Header*/
+header .menubar {
+	border-top: solid 1px #e9e9e9;
+	border-bottom: solid 1px #e9e9e9;
+}
+/*Logo*/
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+	color: #212121;
+	text-shadow: 2px 2px 4px #696969;
+}
+
+.logo_text h2 {
+	color: #212121;
+	text-shadow: 2px 2px 4px #696969;
+}
+/*Navigation*/
+ul.menu li a {
+	color: #656565;
+}
+ul.menu li.selected a {
+	color: #212121;
+	text-shadow: 2px 2px 10px #696969;
+}
+ul.menu li a:hover {
+	color: #fff;
+	text-shadow: 2px 2px 10px #696969;
+}
+/*Welcome text*/
+.site_content .container .hi_block {
+	background-color: #e9e9e9;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+/*Create an account button*/
+.site_content .container .form_create .btn_create {
+	background-color: #e9e9e9;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.site_content .container .btn_create:hover {
+	background-color: #ddd;
+}
+.site_content .container .btn_create:hover {
+	background-color: #ddd;
+}
+/*Registration*/
+.site_content .container .reg_window {
+	background-color: #e9e9e9;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.site_content .reg_window .reg_title {
+	background-color: white;
+}
+form fieldset {
+	background-color: white;
+}
+input {
+	border: solid 1px #e9e9e9;
+}
+/*Send form button*/
+.btn_form {
+	background-color: #e9e9e9;
+}
+.btn_form:hover {
+	background-color: #ddd;
+}
+/*Username*/
+.site_content .container_todo .name_of_user p {
+	color: #212121;
+}
+/*To-do page*/
+.site_content .container .todo_block {
+	background-color: #e9e9e9;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+/*Add task form*/
+.site_content .container .todo_block form label .form-control {
+	border: solid 2px #d1d1d1;
+}
+/*Send task button*/
+.site_content .container_todo .todo_block .todo_block_container form label .sendTask {
+	background-color: #fff;
+	border: solid 2px #d1d1d1;
+	color: #d1d1d1;
+}
+.site_content .container_todo .todo_block .todo_block_container form label .sendTask:hover {
+	border: solid 2px #bbb;
+	color: #bbb;
+}
+/*Task*/
+.site_content .container_todo .todo_block .todo_block_container ul .task_row li {
+	border: solid 2px #d1d1d1;
+	background-color: white;
+	color: #212121;
+}
+/*Update task button*/
+.site_content .container_todo .todo_block .todo_block_container .tasks_container .updForm .updTsk {
+	border: solid 2px #d1d1d1;
+	background-color: white;
+	color: #212121;
+}
+/*Delete task button*/
+.del {
+	background-color: #fff;
+	border: solid 2px #d1d1d1;
+	color: #d1d1d1;
+}
+.del:hover {
+	border: solid 2px #bbb;
+	color: #bbb;
+}
+/*Done task button*/
+.done {
+	background-color: #fff;
+	border: solid 2px #d1d1d1;
+	color: #d1d1d1;
+}
+.done:hover {
+	border: solid 2px #bbb;
+	color: #bbb;
+}
+/*Update task button*/
+.upd {
+	background-color: #fff;
+	border: solid 2px #d1d1d1;
+	color: #d1d1d1;
+}
+.upd:hover {
+	border: solid 2px #bbb;
+	color: #bbb;
+}
+/*Save task button*/
+.save {
+	background-color: #fff;
+	border: solid 2px #d1d1d1;
+	color: #d1d1d1;
+}
+.save:hover {
+	border: solid 2px #bbb;
+	color: #bbb;
+}
+/*Paging*/
+.paging_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.paging {
+	background-color: white;
+	border: solid 2px #d1d1d1;
+	color: #d1d1d1;
+}
+
+.paging a {
+	color: #d1d1d1;
+}
+/*Log in button*/
+.btn_login {
+	text-decoration: underline;
+	color: #212121;
+}
+/*Footer*/
+footer {
+	height: 10%;
+	background-color: #fff;
+	align-items: center;
+
+}
+/*Signature*/
+footer .created_by {
+	width: 70%;
+	border-top: solid 1px #e9e9e9;
+	justify-content: center;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+footer .created_by p {
+	padding-top: 20px;
+	color: #212121;
+}
+footer .created_by p a {
+	text-decoration: none;
+	color: #656565;
+}
+footer .created_by p a:hover {
+	text-decoration: underline;
+	color: #212121;
+}
+/*Changing themes*/
+.theme {
+	background: #ffffff;
+	box-shadow: 0 0 10px rgba(39,38,40,0.4);
+}
+/*Sun button*/
+.btn_light {
+	border: solid 2px #d1d1d1;
+	background-color: white;
+}
+.btn_light:hover {
+	border: solid 2px #bbb;
+}
+/*Moon button*/
+.btn_dark {
+	border: solid 2px #d1d1d1;
+	background-color: white;
+}
+.btn_dark:hover {
+	border: solid 2px #bbb;
+}
+
+
+
+
+
+
+

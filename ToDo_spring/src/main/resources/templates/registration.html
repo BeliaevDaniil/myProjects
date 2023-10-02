@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>"To-do" - Registration</title>
+	<link rel="stylesheet" media="screen" href="/css/style.css">
+	<link rel="stylesheet" media="print" href="/css/style_print.css">
+	<link rel="stylesheet" title="theme" href="/css/theme-dark.css">
+<!--    <script src="assets/js/validate.js"></script>-->
+
+</head>
+<body>
+    <!--Changing themes-->
+	<div class="theme">
+		<form action="#"><button class="btn_light"><img src="/img/sun.png" alt="light"></button></form>
+		<form action="#"><button class="btn_dark"><img src="/img/moon.png" alt="dark"></button></form>
+	</div>
+    <!--Header-->
+	<header>
+		<div class="logo"> 
+			<div class="logo_text">
+				<h1><a th:href="@{/}">To-do</a></h1>
+				<h2>Make your day structured</h2>
+			</div>
+		</div>
+        <!--Navigation-->
+		<nav class="menubar">
+			<ul class="menu">
+				<li><a th:href="@{/}">Home</a></li>
+				<li><a th:href="@{/todo}">My To-do</a></li>
+			</ul>
+		</nav>
+	</header>
+    <!--Main content-->
+	<div class="site_content">
+		<div class="container">
+			<section class="reg_window">
+				<h2 class="reg_title">Registration</h2>
+			    <form th:action="@{/register}" th:object="${registrationForm}"  method="POST" class="form" id="registerForm">
+			        <fieldset>
+			            <div class="row">
+			                <label for="username"><span>*</span>Username:</label>
+			                <input th:field="*{username}" type="text" id="username" placeholder="Enter your username" value=""
+								   name="username" title="The minimum username length is 3 characters, can contain only letters and digits"
+								   required pattern="[^\s]+[A-Za-zА-яЁё0-9]{2,}">
+                            <p class="error" id="error_username" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Error username</p>
+
+			            </div>
+						<div class="row">
+							<label for="name"><span>*</span>Name:</label>
+							<input th:field="*{name}" type="text" id="name" placeholder="Enter your name" value="" name="name"
+								   title="The minimum name length is 3 characters, can contain only letters and digits">
+							<p class="error" id="error_name" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Error name</p>
+						</div>
+			            <div class="row">
+			                <label for="email">E-mail:</label>
+			                <input th:field="*{email}" type="email" id="email" placeholder="Enter your e-mail" value=""
+								   name="email" title="E-mail should contain '@', must not contain spaces"
+								   required pattern="[^\s]+[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}">
+                            <p class="error" id="error_email" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Error email</p>
+			            </div>
+			            <div class="row">
+			            	<label for="password"><span>*</span>Password:</label>
+			            	<input th:field="*{password}" type="password" name="password" id="password" placeholder="Enter your password"
+								   required pattern="\w{6,}" title="The minimum password length is 6 characters, must not contain spaces">
+                            <p class="error" id="error_password" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Error password</p>
+			            </div>
+			            <div class="row">
+			            	<label for="password2"><span>*</span>Repeat password:</label>
+			            	<input th:field="*{password2}" type="password" name="password2" id="password2" placeholder="Repeat password" title="The minimum password length is 6 characters, must not contain spaces">
+                            <p class="error" id="error_password2" th:if="${#fields.hasErrors('password2')}" th:errors="*{password2}">Error password 2</p>
+			            </div>
+                        <div class="explain"><p>Fields with "<span>*</span>" are required</p></div>
+			            <input class="btn_form" type="submit" name="reg" value="Register">
+                        <p>Already have an account? - <a class="btn_login" th:href="@{/login}">Log in!</a></p>
+			        </fieldset>
+			    </form>
+			</section>
+		</div>
+	</div>
+    <!--Footer-->
+	<footer>
+        <!--Signature-->
+		<div class="created_by">
+			<p>&copy; Created by <a href="https://instagram.com/belya4real?igshid=YmMyMTA2M2Y=">Daniil Beliaev</a></p>
+		</div>
+	</footer>
+</body>
+</html>

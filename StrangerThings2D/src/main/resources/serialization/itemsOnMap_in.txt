@@ -1,0 +1,5 @@
+HealingItem, 4, 3
+HealingItem, 4, 4
+HealingItem, 4, 5
+AttackItem, 48, 48
+

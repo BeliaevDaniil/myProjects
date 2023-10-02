@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>"To-do" - Tasks</title>
+	<link rel="stylesheet" media="screen" href="/css/style.css">
+	<link rel="stylesheet" media="print" href="/css/style_print.css">
+	<link rel="stylesheet" title="theme" href="/css/theme-dark.css">
+</head>
+<body>
+    <!--Changing themes-->
+	<div class="theme">
+		<form action="#"><button class="btn_light"><img src="/img/sun.png" alt="light"></button></form>
+		<form action="#"><button class="btn_dark"><img src="/img/moon.png" alt="dark"></button></form>
+	</div>
+    <!--Header-->
+	<header>
+		<div class="logo"> 
+			<div class="logo_text">
+				<h1><a th:href="@{/}">To-do</a></h1>
+				<h2>Make your day structured</h2>
+			</div>
+		</div>
+        <!--Navigation-->
+		<nav class="menubar">
+			<ul class="menu">
+				<li class="selected"><a th:href="@{/todo}">My To-do</a></li>
+				<li><a href="#" th:href="@{/logout}">Logout</a></li>
+
+			</ul>
+		</nav>
+	</header>
+    <!--Main content-->
+	<div class="site_content">
+		<div class="container_todo">
+			<div class='name_of_user'><p><span th:text="${user.getName()}" class="user_name"></span>'s to-do list</p></div>
+			<div class="todo_block">
+				<div class="todo_block_container">
+					<form th:action="@{/todo/add}" th:object="${task}" method="post" class="sendForm">
+                        <input th:field="*{value_of_task}" name="task" id="task" type="text" class="form-control" placeholder="Write down your task here">
+						<p class="message"
+							  th:if="${#fields.hasErrors('value_of_task')}"
+							  th:errors="*{value_of_task}">Task be at least 5 characters long</p>
+
+						<p class="error" th:if="${#fields.hasErrors('value_of_task')}" th:errors="*{value_of_task}">Error task</p>
+                        <button type="submit" name="submit_tsk" class="sendTask"><img src="/img/plus.png" alt="+"></button>
+					</form>
+
+					<div class="tasks_container">
+						<ul th:each="task, iStat : ${taskPage.content}">
+							<li th:class="${task.isUpdating() ? 'hidden' : 'task_row'}">
+
+								<input readonly th:class="${task.isCompleted()} ? 'task_plate_crossed' : 'task_plate'" th:value="${task.value_of_task}">
+
+								<form class='a_del' method='post' th:action="@{/todo/delete}">
+									<input type="hidden" name="taskId" th:value="${task.getId()}">
+									<button class='del' type='submit'><img src='/img/del.png' alt='del'></button>
+								</form>
+								<form class='a_done' method='post' th:action="@{/todo/done}">
+									<input type="hidden" name="taskId" th:value="${task.getId()}">
+									<button class='done'><img src='/img/done.png' alt='&#10003;'></button>
+								</form>
+								<form class='a_upd' method='post' th:action="@{/todo/update}">
+									<input type="hidden" name="taskId" th:value="${task.getId()}">
+									<button class='upd'>&#9998;</button>
+								</form>
+							</li>
+							<li th:class="${task.isUpdating() ? '' : 'hidden'}">
+								<form class='updForm' th:action="@{/todo/applyChanges}" id='form' method='post'>
+									<input class='updTsk' id='updateTask' type='text' name="newValue" th:value="${task.getValue_of_task()}" required>
+									<input type="hidden" name="taskId" th:value="${task.getId()}">
+									<button type='submit' name='save' class='save'>Save</button>
+								</form>
+							</li>
+						</ul>
+
+						<div class="paging_container">
+							<div th:if="${taskPage.totalPages > 0}" class="paging"
+								 th:each="pageNumber : ${pageNumbers}">
+								<a th:href="@{/todo(size=${taskPage.size}, page=${pageNumber})}"
+								   th:text="${pageNumber}"
+								   th:class="${pageNumber==taskPage.number + 1} ? active"></a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+        <!--Signature-->
+		<div class="created_by">
+			<p>&copy; Created by <a href="https://instagram.com/belya4real?igshid=YmMyMTA2M2Y=">Daniil Beliaev</a></p>
+		</div>
+	</footer>
+</body>
+</html>
