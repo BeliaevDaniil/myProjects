@@ -9,9 +9,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import todo.data.TaskRepository;
 import todo.entity.Task;
-
 import java.util.Collections;
 import java.util.List;
+
 @Slf4j
 @Service
 public class TaskService {

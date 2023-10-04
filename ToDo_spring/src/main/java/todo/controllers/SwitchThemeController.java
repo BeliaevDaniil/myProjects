@@ -1,4 +1,4 @@
-package todo.web;
+package todo.controllers;
 
 
 import org.springframework.boot.web.server.Cookie;

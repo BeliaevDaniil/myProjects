@@ -1,5 +1,4 @@
-package todo.security;
-
+package todo.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -38,14 +37,11 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/todo").hasRole("USER")
                         .requestMatchers("/", "/**").permitAll())
-
                 .formLogin(formLogin -> formLogin
                         .loginPage("/login")
                         .defaultSuccessUrl("/todo", true)
                         .failureUrl("/login-error")
                 )
-
-
                 .logout(logout -> logout
                         .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                         .logoutSuccessUrl("/login"));
